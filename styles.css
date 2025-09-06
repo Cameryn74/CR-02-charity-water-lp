@@ -1,8 +1,22 @@
+/* Logo styles */
+.logo-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  /* Makes sure the logo stays on top */
+  z-index: 100;
+}
+
+.logo-img {
+  width: 100px; /* Adjust size as needed */
+  height: auto;
+}
 /* charity: water Brand Colors & Fonts
 
 Primary Colors:
-- Yellow:     #FFC907
+- Yellow:     #FFC907 
 - Blue:       #2E9DF7
+- black:      #1A1A1A
 
 Secondary Colors:
 - Light Blue: #8BD1CB
@@ -69,77 +83,75 @@ section {
   text-shadow: 0 2px 8px rgba(0,0,0,0.15); /* Soft shadow for readability */
 }
 
-/* Style the subheadline */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f7fafc;
+  color: #FFF7E1;
+}
+
+/* Logo styles */
+.logo-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 100;
+}
+.logo-img {
+  width: 100px;
+  height: auto;
+}
+
+/* Hero section */
+.hero {
+  text-align: center;
+  padding: 80px 20px 40px 20px;
+  background: #e0f7fa;
+}
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
 .hero p {
   font-size: 1.2em;
-  margin-top: 0;
-  text-shadow: 0 1px 4px rgba(0,0,0,0.12);
-}
-
-/* Story Section Styles */
-.story {
-  background-color: #8BD1CB; /* Secondary Light Blue */
-  color: #222;
-  text-align: center;
-  padding: 30px 20px;
-}
-
-/* Add accent color to section headings */
-h2 {
-  color: #2E9DF7; /* Primary blue */
-  margin-top: 0;
-  font-weight: bold;
-}
-
-/* Call-to-Action Section Styles */
-.call-to-action {
-  background-color: #FFC907; /* Primary Yellow */
-  color: #222;
-  text-align: center;
-  padding: 30px 20px;
-}
-
-/* Style the impact story image */
-.impact-image {
-  width: 100%;
-  max-width: 320px;
-  border-radius: 10px;
-  margin-bottom: 16px;
-  box-shadow: 0 2px 8px rgba(46, 157, 247, 0.10);
-}
-
-/* Donate Button Styles */
-.donate-button {
-  display: inline-block;
-  background-color: #4FCB53; /* Green */
-  color: #fff;
-  padding: 14px 32px;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: bold;
-  font-size: 1.1em;
-  margin-top: 18px;
-  box-shadow: 0 2px 8px rgba(79, 203, 83, 0.10);
-  transition: background 0.3s, transform 0.2s;
-  border: none;
-  cursor: pointer;
-}
-
-/* Change button color when hovered */
-.donate-button:hover {
-  background-color: #159A48; /* Dark Green */
-  transform: translateY(-2px) scale(1.04); /* Slight lift */
-}
-
-/* Add some spacing between sections */
-section {
   margin-bottom: 20px;
 }
+.cta-button {
+  background: #0077c2;
+  color: #fff;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1em;
+}
 
-/* 
-  Media Queries for Responsive Design
-  Media queries help make your website look good on different screen sizes,
-  like phones (small screens) and computers (large screens).
+/* About/Story section */
+.about {
+  padding: 40px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+/* Impact section */
+.impact {
+  padding: 40px 20px;
+  background: #f1f8e9;
+  text-align: center;
+}
+.impact-img {
+  width: 100%;
+  max-width: 400px;
+  margin: 20px 0;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
 */
 
 /* This media query applies styles when the screen is 600px wide or less (like on most phones) */
