@@ -15,7 +15,7 @@
 
 Primary Colors:
 - Yellow:     #FFC907 
-- Blue:       #2E9DF7
+- Blue:       #FFF7E1
 - black:      #1A1A1A
 
 Secondary Colors:
@@ -39,7 +39,13 @@ Fonts:
 
 /* Set up the main font and background color for the whole page */
 body {
-  background-color: #f4f8fb; /* Soft light blue for a fresh look */
+  /* Set the background image for the whole page */
+  background-image: url('img/hands-water.jpg');
+  background-size: cover; /* Make the image cover the whole page */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  min-height: 100vh; /* Make sure the background covers the whole viewport */
+  background-color: #f4f8fb; /* Soft light blue for a fresh look if image doesn't load */
   font-family: 'Avenir', 'Proxima Nova', Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -83,12 +89,7 @@ section {
   text-shadow: 0 2px 8px rgba(0,0,0,0.15); /* Soft shadow for readability */
 }
 
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #f7fafc;
-  color: #FFF7E1;
+  /* ...existing code... */
 }
 
 /* Logo styles */
@@ -107,7 +108,7 @@ body {
 .hero {
   text-align: center;
   padding: 80px 20px 40px 20px;
-  background: #e0f7fa;
+  background: #003366;
 }
 .hero h1 {
   font-size: 2.5em;
@@ -129,14 +130,14 @@ body {
 /* About/Story section */
 .about {
   padding: 40px 20px;
-  background: #fff;
+  background: #003366;
   text-align: center;
 }
 
 /* Impact section */
 .impact {
   padding: 40px 20px;
-  background: #f1f8e9;
+  background: #003366;
   text-align: center;
 }
 .impact-img {
@@ -152,7 +153,7 @@ footer {
   text-align: center;
   padding: 20px 0;
 }
-*/
+
 
 /* This media query applies styles when the screen is 600px wide or less (like on most phones) */
 @media (max-width: 600px) {

@@ -1,0 +1,11 @@
+/* Set the background image for the whole page */
+body {
+  /* Use the provided photo as the background */
+  background-image: url('https://user-images.githubusercontent.com/placeholder/hands-water.jpg'); /* Replace with local path if uploaded */
+  background-size: cover; /* Make the image cover the whole page */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  min-height: 100vh; /* Make sure the background covers the whole viewport */
+}
+
+/* ...existing code... */
