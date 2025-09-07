@@ -1,211 +1,152 @@
-/* Logo styles */
-.logo-container {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  /* Makes sure the logo stays on top */
-  z-index: 100;
+/* Simple search bar styles */
+.site-header {
+  width: 100vw;
+  padding: 18px 0 8px 0;
+  display: flex;
+  justify-content: center;
+  background: rgba(255,255,255,0.7); /* Slightly see-through white */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.search-bar input[type="text"] {
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  outline: none;
+}
+.search-bar button {
+  padding: 8px 18px;
+  border-radius: 20px;
+  border: none;
+  background: #FFC907;
+  color: #1A1A1A;
+  font-weight: bold;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.search-bar button:hover {
+  background: #FFD84A;
 }
 
-.logo-img {
-  width: 100px; /* Adjust size as needed */
-  height: auto;
-}
-/* charity: water Brand Colors & Fonts
-
-Primary Colors:
-- Yellow:     #FFC907 
-- Blue:       #FFF7E1
-- black:      #1A1A1A
-
-Secondary Colors:
-- Light Blue: #8BD1CB
-- Green:      #4FCB53
-- Orange:     #FF902A
-- Red:        #F5402C
-- Dark Green: #159A48
-- Pink:       #F16061
-
-Fonts:
-- Proxima Nova
-- Avenir
-
-*/
-
-/* 
-  Charity: Water Landing Page Styles
-  This CSS uses the provided color palette and beginner-friendly styles.
-*/
-
-/* Set up the main font and background color for the whole page */
+/* Add space at the top of the page so content isn't hidden behind the fixed header */
 body {
-  /* Set the background image for the whole page */
-  background-image: url('img/hands-water.jpg');
-  background-size: cover; /* Make the image cover the whole page */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  min-height: 100vh; /* Make sure the background covers the whole viewport */
-  background-color: #f4f8fb; /* Soft light blue for a fresh look if image doesn't load */
+  padding-top: 60px;
+}
+/* --- CHARITY: WATER LANDING PAGE STYLES (Canva-inspired) --- */
+
+body {
+  /* Set the background image to the hands and water photo */
+  background-image: url('img/hands with water .jpg'); /* This will use the new hands with water photo as background */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
   font-family: 'Avenir', 'Proxima Nova', Arial, sans-serif;
   margin: 0;
   padding: 0;
-  color: #222;
 }
 
-/* Add a slight shadow and rounded corners to each section for depth */
-section {
-  background: #fff; /* White background for sections */
-  border-radius: 12px; /* Rounded corners */
-  box-shadow: 0 2px 8px rgba(46, 157, 247, 0.07); /* Soft blue shadow */
-  margin: 24px 10px; /* Space between sections */
-  padding: 24px 16px;
-}
-
-/* Hero Section Styles */
 .hero {
-  position: relative; /* Needed for overlay */
-  /* Set a background image that covers the whole section */
-  background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80');
-  background-size: cover;      /* Make the image cover the whole area */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat;
-  color: #fff;                 /* White text for contrast */
-  text-align: center;          /* Center the text */
-  padding: 60px 20px;          /* Add space above and below */
-  border-radius: 0 0 16px 16px; /* Only round bottom corners */
-
-  /* Add a dark overlay for better text readability */
-  /* This uses a simple linear-gradient overlay */
-  background-blend-mode: darken;
-  background-color: rgba(46, 157, 247, 0.45); /* Blue overlay */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  width: 100vw;
+  position: relative;
+  color: #fff;
+  padding: 0 0 0 7vw;
+  box-sizing: border-box;
 }
 
-/* Make the headline bold and modern */
+.hero-content {
+  margin-top: 10vh;
+  max-width: 600px;
+}
+
 .hero h1 {
-  font-size: 2.5em;
+  color: #FFC907;
+  font-size: 3em;
   font-weight: bold;
-  letter-spacing: 1px;
-  margin-bottom: 15px;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.15); /* Soft shadow for readability */
+  line-height: 1.1;
+  margin-bottom: 18px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.18);
 }
 
-  /* ...existing code... */
-}
-
-/* Logo styles */
-.logo-container {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  z-index: 100;
-}
-.logo-img {
-  width: 100px;
-  height: auto;
-}
-
-/* Hero section */
-.hero {
-  text-align: center;
-  padding: 80px 20px 40px 20px;
-  background: #003366;
-}
-.hero h1 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
-}
 .hero p {
+  color: #fff;
   font-size: 1.2em;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.18);
 }
+
 .cta-button {
-  background: #0077c2;
-  color: #fff;
-  padding: 15px 30px;
+  display: inline-block;
+  background: #FFC907;
+  color: #1A1A1A;
+  font-weight: bold;
+  font-size: 1.3em;
+  padding: 18px 38px;
+  border-radius: 40px;
   text-decoration: none;
-  border-radius: 5px;
-  font-size: 1em;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  transition: background 0.2s;
+  border: none;
+  cursor: pointer;
+}
+.cta-button:hover {
+  background: #FFD84A;
 }
 
-/* About/Story section */
-.about {
-  padding: 40px 20px;
-  background: #003366;
-  text-align: center;
-}
+.cw-logo-box {
+  position: absolute;
+  right: 0;
+  bottom: 20px;
 
-/* Impact section */
-.impact {
-  padding: 40px 20px;
-  background: #003366;
-  text-align: center;
+  padding: 24px 32px 18px 32px;
+  border-radius: 0 0 0 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 180px;
 }
-.impact-img {
-  width: 100%;
-  max-width: 400px;
-  margin: 20px 0;
+.cw-logo-img {
+  width: 200px;
+  height: auto;
+  margin-bottom: 8px;
 }
-
-/* Footer */
-footer {
-  background: #222;
+.cw-logo-text {
   color: #fff;
-  text-align: center;
-  padding: 20px 0;
+  font-size: 200px;
+  letter-spacing: 1px;
+  font-family: 'Avenir', Arial, sans-serif;
 }
 
-
-/* This media query applies styles when the screen is 600px wide or less (like on most phones) */
 @media (max-width: 600px) {
-  /* Make hero section padding smaller on small screens */
   .hero {
-    padding: 32px 8px;
-    font-size: 1em;
-  }
-
-  /* Make headline font size smaller so it fits on small screens */
-  .hero h1 {
-    font-size: 1.4em;
-  }
-
-  /* Make subheadline font size smaller */
-  .hero p {
-    font-size: 1em;
-  }
-
-  /* Make story and call-to-action sections have less padding */
-  .story,
-  .call-to-action,
-  .donation-section {
-    padding: 14px 8px;
-  }
-
-  /* Make impact story image smaller and stack above the text */
-  .impact-content {
-    display: block; /* Stack items vertically */
+    padding: 0 4vw;
+    align-items: center;
     text-align: center;
   }
-
-  .impact-image {
-    width: 90%;    /* Make image take up most of the width */
-    max-width: 220px;
+  .hero-content {
+    margin-top: 6vh;
+    max-width: 98vw;
   }
-}
-
-/* This media query applies styles when the screen is wider than 600px (like on tablets and computers) */
-@media (min-width: 601px) {
-  /* Show image and text side by side in the impact story */
-  .impact-content {
-    display: flex;           /* Place items in a row */
-    align-items: center;     /* Vertically center items */
-    justify-content: center; /* Center the whole group */
-    gap: 28px;               /* Space between image and text */
-    text-align: left;
-    max-width: 800px;
-    margin: 0 auto;
+  .hero h1 {
+    font-size: 2em;
   }
-
-  .impact-image {
-    width: 300px;
+  .cw-logo-box {
+    min-width: 120px;
+    padding: 14px 10px 10px 10px;
   }
 }
